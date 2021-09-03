@@ -3,6 +3,7 @@ import Home from './Home';
 import {BrowserRouter as Router, Switch} from 'react-router-dom'; 
 import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import Create from './Create';
+import BlogDetails from './BlogDetails';
 function App() {
   return (
     <Router>
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path="/create">
             <Create/>
+          </Route>
+          <Route path="/blogs/:id">
+            <BlogDetails/>
           </Route>
         </Switch>
       </div>
