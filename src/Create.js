@@ -35,11 +35,11 @@ const Create = () => {
                 <input type="text" required value={title} onChange={(e)=>{
                     setTitle(e.target.value);
                 }}/>
-                <p>{title}</p>
+                
                 <label >Blog body:</label>
                 <textarea required value={body} onChange={(e)=>{
                     setBody(e.target.value)}}></textarea>
-                <p>{body}</p>
+                
                 <label>Blog author:</label>
                 <select value={author} onChange={(e)=>{
                    setAuthor(e.target.value);
@@ -47,7 +47,7 @@ const Create = () => {
                     <option value="mario">mario</option>
                     <option value="yoshi">yoshi</option>
                 </select>
-                <p>{author}</p>
+                
                 
                 {!isPending && <button>Add Blog</button> }
                 {isPending && <button disabled>Adding Blog......</button>}
