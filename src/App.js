@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import Create from './Create';
 function App() {
-  const title = "Welcome to New Blog";
   return (
     <Router>
     <div className="App">
