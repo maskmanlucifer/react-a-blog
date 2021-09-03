@@ -1,1 +1,1 @@
-A simple todo app made with ReactJS
+A simple blogging app made with ReactJS
