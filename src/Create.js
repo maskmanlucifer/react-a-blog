@@ -1,11 +1,13 @@
-import { useState } from "react/cjs/react.development";
+import { useState  } from "react/cjs/react.development";
+import {useHistory} from 'react-router-dom';
 
 const Create = () => {
     const [title,setTitle] = useState('');
     const [body,setBody] = useState('');
     const [author,setAuthor] = useState('mario');
     const [isPending,setPending] = useState(false);
-
+    
+    const history = useHistory();
     
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -20,9 +22,9 @@ const Create = () => {
       .then(()=>{
         console.log("New Blog Added");
         setPending(false);  
-        setTitle('');
-        setBody('');
+        history.push('/');
       })
+      
     };
 
     return ( 
